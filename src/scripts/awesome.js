@@ -1,3 +1,5 @@
+const DomBuilder = require("./DomBuilder")
+
 //Final output DOM component reference
 const output = document.querySelector(".output")
 
@@ -50,4 +52,5 @@ createCardButton.addEventListener("click", function() {
 fragment.appendChild(cardTextInput)
 fragment.appendChild(createCardButton)
 
-output.appendChild(fragment)
+DomBuilder(fragment, ".output")
+// output.appendChild(fragment)
